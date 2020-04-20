@@ -4,7 +4,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get -qq update && \
     apt-get -qq install apt-transport-https locales krb5-user curl && \
-    apt-get install python3 python3-pip -y && \
+    apt-get install python3 python3-pip vim -y && \
     apt-get -qq clean
 
 RUN pip3 install tzlocal termcolor kafka-python
