@@ -7,7 +7,7 @@ RUN apt-get -qq update && \
     apt-get install python3 python3-pip vim -y && \
     apt-get -qq clean
 
-RUN pip3 install tzlocal termcolor kafka-python confluent-kafka
+RUN pip3 install tzlocal termcolor kafka-python confluent-kafka rich
 
 RUN locale-gen "en_US.UTF-8"
 RUN echo "LC_ALL=\"en_US.UTF-8\"" >> /etc/default/locale
